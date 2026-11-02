@@ -63,7 +63,7 @@ Enforced automatically on all agent operations:
 To restore or install this setup on any machine with Google Antigravity:
 
 ```bash
-git clone https://github.com/rmia46/antigravity-autonomous-org.git
+git clone https://github.com/rmia46/code-buddy.git
 cd antigravity-autonomous-org
 ./install.sh
 ```
