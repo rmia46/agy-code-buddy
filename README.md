@@ -63,7 +63,7 @@ Enforced automatically on all agent operations:
 To restore or install this setup on any machine with Google Antigravity:
 
 ```bash
-git clone https://github.com/rmia46/code-buddy.git
+git clone https://github.com/rmia46/agy-agy-code-buddy.git
 cd antigravity-autonomous-org
 ./install.sh
 ```
@@ -76,7 +76,7 @@ agy plugin list
 You should see:
 ```text
 Installed plugins:
-- code-buddy (enabled)
+- agy-code-buddy (enabled)
     Components: 13 skills, 1 rule
 ```
 

@@ -5,7 +5,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TARGET_PLUGIN_DIR="${HOME}/.gemini/config/plugins/code-buddy"
+TARGET_PLUGIN_DIR="${HOME}/.gemini/config/plugins/agy-code-buddy"
 TARGET_AGENTS_DIR="${HOME}/.gemini/config/agents"
 CONFIG_FILE="${HOME}/.gemini/config/config.json"
 
@@ -47,7 +47,7 @@ if os.path.exists(config_path):
         config = {}
 
 plugins = config.setdefault("plugins", {})
-plugins["code-buddy"] = {"enabled": True}
+plugins["agy-code-buddy"] = {"enabled": True}
 
 with open(config_path, "w") as f:
     json.dump(config, f, indent=2)
@@ -57,7 +57,7 @@ EOF
 # 6. Verification
 if command -v agy &>/dev/null; then
     echo "==> Verifying with agy plugin list..."
-    agy plugin list | grep -E "code-buddy" || echo "Note: Run 'agy plugin list' to check status."
+    agy plugin list | grep -E "agy-code-buddy" || echo "Note: Run 'agy plugin list' to check status."
 fi
 
 echo ""
