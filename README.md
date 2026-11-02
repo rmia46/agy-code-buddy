@@ -76,7 +76,7 @@ agy plugin list
 You should see:
 ```text
 Installed plugins:
-- autonomous-eng-org (enabled)
+- code-buddy (enabled)
     Components: 13 skills, 1 rule
 ```
 
